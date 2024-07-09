@@ -1,0 +1,13 @@
+@import './base.css';
+
+html {
+  scrollbar-color: #D87400 #ebb353;
+  scrollbar-width: thin;
+}
+
+main{
+  background-image: linear-gradient(180deg, #000, #c99a63);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Open Sans";
+}
