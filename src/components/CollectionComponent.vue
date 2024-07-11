@@ -1,16 +1,22 @@
 <template>
-    <div>
-        <CollectionMain />
-    </div>
+  <main>
+    <MADBHeader />
+      <CollectionMainComponent />
+    <MADBFooter />
+  </main>
 </template>
 
 <script>
-import CollectionMain from './icons/CollectionMain.vue';
+import CollectionMainComponent from './icons/CollectionMain.vue';
+import MADBHeader from './icons/MADBHeader.vue';
+import MADBFooter from './icons/MADBFooter.vue';
 
 export default {
-  name: 'CollectionMain',
+  name: 'CollectionComponent',
   components: {
-    CollectionMain,
+    CollectionMainComponent,
+    MADBHeader,
+    MADBFooter,
   },
 }
 </script>

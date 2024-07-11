@@ -1,17 +1,17 @@
 <template>
     <div class="collection">
-        <CollectionComponent />
+      <CollectionComponent />
     </div>
-</template>
+  </template>
+    
+  <script>
+  import CollectionComponent from '@/components/CollectionComponent.vue';
   
-<script>
-    import CollectionComponent from '@/components/CollectionComponent.vue';
-
-    export default {
-        name: 'Collection',
-        components: {
-            CollectionComponent,
-        }
+  export default {
+    name: 'Collection',
+    components: {
+      CollectionComponent,
     }
-</script>
+  }
+  </script>
 

@@ -1,10 +1,11 @@
 <template>
     <div class="main-bg">
-      <div class="add-pc">
-                <img class="add-file-icon" alt="" src="https://i.postimg.cc/XYmGmVfQ/IconFile.png">
+      <RouterLink to="/addpc" class="rl-link">
+        <div class="add-pc">
+          <img class="add-file-icon" alt="" src="https://i.postimg.cc/XYmGmVfQ/IconFile.png">
                 <br>
-                <p class="add-new">Add new Photocard</p>
-            </div>
+          <p class="add-new">Add new Photocard</p>
+        </div></RouterLink>
             <div class="line-div"></div>
             <p class="latest-addition">Latest addition</p>
                 <div class="rectangle-div"></div>
@@ -45,17 +46,20 @@
       height: 272px;
   }
 
+  .rl-link {
+    color: white;
+    text-decoration: none;
+  }
+
   .add-file-icon {
-      margin-left: 18%;
-      margin-top: 50px;
     width: 100px;
     height: 100px;
   }
 
   .add-new {
       width: 70%;
-      margin-top: 160px;
-      margin-left: -55%;
+      display: flex;
+      justify-content: center;
       font-size: 25px;
       text-align: center;
   }

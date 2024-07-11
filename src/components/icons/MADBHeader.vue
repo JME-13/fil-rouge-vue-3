@@ -19,17 +19,19 @@
   
   <script>
   export default {
+    name: 'MADBHeader',
     data() {
       return {
         links: [
           { href: '/collection', imgSrc: 'https://i.postimg.cc/Wz8qHg8k/Icon-Albums.png', alt: 'collection' },
           { href: '/artist', imgSrc: 'https://i.postimg.cc/QNJ7CZDd/Icon-Micro.png', alt: 'artist' },
           { href: '/browse', imgSrc: 'https://i.postimg.cc/JzGHpyks/Icon-Search.png', alt: 'browse' },
-          { href: '/settings', imgSrc: 'https://i.postimg.cc/mkBFj8Y4/Icon-Account.png', alt: 'settings' }
+          { href: '/account', imgSrc: 'https://i.postimg.cc/mkBFj8Y4/Icon-Account.png', alt: 'filter' }
         ]
       }
     }
   }
+
   </script>
   
   <style scoped>

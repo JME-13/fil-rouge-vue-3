@@ -1,10 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import dashboard from '../views/dashboard.vue';
-import collection from '../views/collection.vue';
+import Home from '../views/home.vue';
+import Dashboard from '../views/dashboard.vue';
+import Collection from '../views/collection.vue';
+import AddPC from '../views/AddPC.vue';
+import BrowsePc from '../views/BrowsePc.vue';
 
 const routes = [
-  { path: '/', name:'dashboard', component: dashboard },
-  { path:'/collection', name:'collection', component: collection },
+  { path: '/', name: 'Home', component: Home },
+  { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/collection', name: 'Collection', component: Collection },
+  { path: '/addpc', name: 'AddPC', component: AddPC },
+  { path: '/browsepc', name: 'BrowsePC', component: BrowsePc },
 ];
 
 const router = createRouter({

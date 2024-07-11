@@ -1,20 +1,20 @@
 <template>
-  <main>
-    <MADBHeader />
-      <MainBG />
-    <MADBFooter />
-  </main>
-</template>
+    <main>
+      <MADBHeader />
+      <AddPCMainComponent />
+      <MADBFooter />
+    </main>
+  </template>
   
   <script>
-  import MainBG from './icons/MainBG.vue';
+  import AddPCMainComponent from './icons/AddPCMain.vue';
   import MADBHeader from './icons/MADBHeader.vue';
   import MADBFooter from './icons/MADBFooter.vue';
   
   export default {
-    name: 'MainBGComponent',
+    name: 'AddPCComponent',
     components: {
-        MainBG,
+        AddPCMainComponent,
         MADBHeader,
         MADBFooter,
     },
