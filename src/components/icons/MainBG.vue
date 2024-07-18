@@ -1,11 +1,11 @@
 <template>
     <div class="main-bg">
-      <RouterLink to="/addpc" class="rl-link">
         <div class="add-pc">
+          <RouterLink to="/addpc" class="rl-link">
           <img class="add-file-icon" alt="" src="https://i.postimg.cc/XYmGmVfQ/IconFile.png">
                 <br>
-          <p class="add-new">Add new Photocard</p>
-        </div></RouterLink>
+          <p class="add-new">Add new Photocard</p></RouterLink>
+        </div>
             <div class="line-div"></div>
             <p class="latest-addition">Latest addition</p>
                 <div class="rectangle-div"></div>
@@ -22,19 +22,6 @@
   </script>
   
 <style scoped>
-    .main-bg {
-        float: center;
-        border-radius: 50px 0px 50px 0px;
-        background-color: #000;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 50px;
-        width: 95%;
-        font-family: "MuseoModerno";
-        font-weight: bold;
-        color: #ffffff;
-    }
-
       .add-pc {
       display: flex;
       justify-content: center;
@@ -54,24 +41,19 @@
   .add-file-icon {
     width: 100px;
     height: 100px;
+    margin-left: 28%;
+    margin-top: 15%;
   }
 
   .add-new {
       width: 70%;
       display: flex;
       justify-content: center;
-      font-size: 25px;
-      text-align: center;
-  }
-
-  .line-div {
-      margin-top: 50px;
-      margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
-      border-top: 1px solid #fff;
-      width: 80%;
-      height: 1px;
+      margin-top: 5%;
+      font-size: 25px;
+      text-align: center;
   }
 
   .latest-addition {

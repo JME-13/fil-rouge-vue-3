@@ -1,0 +1,58 @@
+export const profiles = {
+    JATZ: {
+      id: 'JATZ',
+      images: ['https://i.postimg.cc/vZfnmDC8/J-Pirate-King.png'],
+      member: 'Hongjoong',
+      album: 'Treasure Ep.1: All To Zero',
+      version: 'Ver. 1',
+    },
+    JZTO: {
+      id: 'JZTO',
+      images: ['https://i.postimg.cc/yNKZ3szm/J-Say-My-Name.png'],
+      member: 'Hongjoong',
+      album: 'Treasure Ep. 2: Zero To One',
+      version: 'Ver. 1',
+    },
+    HOTAI: {
+        id: 'HOTAI',
+        images: ['https://i.postimg.cc/c4VYZf95/J-Illusion.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. 3: One To All',
+        version: 'Illusion Ver.',
+      },
+    HOTAW: {
+        id: 'HOTAW',
+        images: ['https://i.postimg.cc/MGYjyNWh/J-Wave.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. 3: One To All',
+        version: 'Wave Ver.',
+      },
+    JTFA: {
+        id: 'JTFA',
+        images: ['https://i.postimg.cc/7hh7P9rj/J-ATA-A.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. Fin: All To Action',
+        version: 'A Ver.',
+      },
+    JTFZ: {
+        id: 'JTFZ',
+        images: ['https://i.postimg.cc/fT3X68K9/J-ATA-Z.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. Fin: All To Action',
+        version: 'Z Ver.',
+      },
+    JTFAn: {
+        id: 'JTFAn',
+        images: ['https://i.postimg.cc/7hRz5zxh/J-ATA-Aniv.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. Fin: All To Action',
+        version: 'Anniversary Ver.',
+      },
+    JTFAn2: {
+        id: 'JTFAn2',
+        images: ['https://i.postimg.cc/1R7wCkpS/J-ATA-Aniv2.png'],
+        member: 'Hongjoong',
+        album: 'Treasure Ep. Fin: All To Action',
+        version: 'Anniversary Ver.',
+      },
+  };

@@ -28,32 +28,7 @@
   </script>
   
   <style scoped>
-  .main-bg {
-    float: center;
-    border-radius: 50px 0px 50px 0px;
-    background-color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    width: 95%;
-    font-family: "MuseoModerno";
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .title-box {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  .main-title-white {
-    font-size: 40px;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
+
   .collection-block {
     margin-left: auto;
     margin-right: auto;
