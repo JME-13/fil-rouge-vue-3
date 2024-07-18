@@ -1,7 +1,6 @@
 <template>
-    <header>
+    <header><RouterLink to="/dashboard">
       <img class="MADBLogo" alt="" src="https://i.postimg.cc/pXmhnbrL/Logo-atz.png">
-      <RouterLink to="/">
         <p class="MADBText">MyAtinyDataBase</p>
       </RouterLink>
       <nav class="menu">
@@ -9,8 +8,7 @@
           v-for="link in links"
           :key="link.href"
           :to="link.href"
-          class="nav-link"
-        >
+          class="nav-link">
           <img :src="link.imgSrc" class="main-menu" :alt="link.alt">
         </router-link>
       </nav>
@@ -61,11 +59,19 @@
         width: 15%;
     }
 
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
     .main-menu {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 9px;
-}
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;      
+    }
 
     @media screen and (min-width: 600px){
     .MADBText {

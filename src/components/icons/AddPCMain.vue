@@ -29,35 +29,7 @@
   </script>
   
   <style scoped>
-  .main-bg {
-    float: center;
-    border-radius: 50px 0px 50px 0px;
-    background-color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    width: 95%;
-    font-family: "MuseoModerno";
-    font-weight: bold;
-    color: #ffffff;
-  }
   
-  .title-box {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  .mini-title {
-    font-size: 20px;
-}
-
-.main-title{
-    font-size: 40px;
-    color: #D87400;
-}
-
 .add-pc-page {
     display: flex;
     justify-content: center;

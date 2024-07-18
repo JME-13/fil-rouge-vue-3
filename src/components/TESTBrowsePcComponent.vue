@@ -1,7 +1,6 @@
 <template>
     <main>
         <MADBHeader />
-        <div class="main-bg">
             <div class="title-box">
               <p class="mini-title">Browse</p>
                 <p class="main-title">Photocards</p>
@@ -26,11 +25,12 @@
                     </div>
                     <div class="image-container">
                     <div v-for="image in filteredImages" :key="image.src" class="image-wrapper">
+                      <router-link :to="{ name: 'Profile', params: { id: image.alt } }">
                         <img :src="image.src" :alt="image.alt" class="masked-image" />
+                      </router-link>
                     </div>
                 </div>
             </div>
-        </div>
         <MADBFooter />
     </main>
   </template>
@@ -53,14 +53,14 @@
         filterArtists: ['All', 'Hongjoong', 'Seonghwa', 'Yunho', 'Yeosang', 'San', 'Mingi', 'Wooyoung', 'Jongho'],
         filterEras: ['All', 'Treasure Ep.1: All To Zero', 'Treasure Ep. 2: Zero To One', 'Treasure Ep. 3: One To All', 'Treasure Ep. Fin: All To Action', 'Treasure Epilogue: Action To Answer', 'Zero: Fever Part.1', 'Zero: Fever Part.2', 'Zero: Fever Part.3', 'Zero: Fever Epilogue', 'The World EP. 1: Movement', 'The World EP. 2: Outlaw', 'The World EP. Fin: Will', 'Golden Hour: Part.1'],
         images: [
-          { src: 'https://i.postimg.cc/vZfnmDC8/J-Pirate-King.png', alt: 'JATZ', artist: 'Hongjoong', era: 'Treasure Ep.1: All To Zero' },
-          { src: 'https://i.postimg.cc/yNKZ3szm/J-Say-My-Name.png', alt: 'JZTO', artist: 'Hongjoong', era: 'Treasure Ep. 2: Zero To One' },
-          { src: 'https://i.postimg.cc/c4VYZf95/J-Illusion.png', alt: 'JT3', artist: 'Hongjoong', era: 'Treasure Ep. 3: One To All' },
-          { src: 'https://i.postimg.cc/MGYjyNWh/J-Wave.png', alt: 'JT3', artist: 'Hongjoong', era: 'Treasure Ep. 3: One To All' },
-          { src: 'https://i.postimg.cc/7hh7P9rj/J-ATA-A.png', alt: 'JTF', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
-          { src: 'https://i.postimg.cc/fT3X68K9/J-ATA-Z.png', alt: 'JTF', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
-          { src: 'https://i.postimg.cc/7hRz5zxh/J-ATA-Aniv.png', alt: 'JTF', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
-          { src: 'https://i.postimg.cc/1R7wCkpS/J-ATA-Aniv2.png', alt: 'JTF', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
+          { src: 'https://i.postimg.cc/vZfnmDC8/J-Pirate-King.png', alt: 'JATZ', id: 'JATZ', artist: 'Hongjoong', era: 'Treasure Ep.1: All To Zero' },
+          { src: 'https://i.postimg.cc/yNKZ3szm/J-Say-My-Name.png', alt: 'JZTO', id: 'JZTO', artist: 'Hongjoong', era: 'Treasure Ep. 2: Zero To One' },
+          { src: 'https://i.postimg.cc/c4VYZf95/J-Illusion.png', alt: 'HOTAI', id: 'HOTAI', artist: 'Hongjoong', era: 'Treasure Ep. 3: One To All' },
+          { src: 'https://i.postimg.cc/MGYjyNWh/J-Wave.png', alt: 'HOTAW', id: 'HOTAW', artist: 'Hongjoong', era: 'Treasure Ep. 3: One To All' },
+          { src: 'https://i.postimg.cc/7hh7P9rj/J-ATA-A.png', alt: 'JTFA', id: 'JTFA', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
+          { src: 'https://i.postimg.cc/fT3X68K9/J-ATA-Z.png', alt: 'JTFZ', id: 'JTFZ', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
+          { src: 'https://i.postimg.cc/7hRz5zxh/J-ATA-Aniv.png', alt: 'JTFAn', id: 'JTFAn', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
+          { src: 'https://i.postimg.cc/1R7wCkpS/J-ATA-Aniv2.png', alt: 'JTFAn2', id: 'JTFAn2', artist: 'Hongjoong', era: 'Treasure Ep. Fin: All To Action' },
           { src: 'https://i.postimg.cc/ZYXWWgZZ/S-Pirate-King.png', alt: 'SATZ', artist: 'Seonghwa', era: 'Treasure Ep.1: All To Zero' },
           { src: 'https://i.postimg.cc/CLDzkNL8/S-Say-My-Name.png', alt: 'SZTO', artist: 'Seonghwa', era: 'Treasure Ep. 2: Zero To One' },
           { src: 'https://i.postimg.cc/wx1tTzC0/S-Illusion.png', alt: 'ST3', artist: 'Seonghwa', era: 'Treasure Ep. 3: One To All' },
